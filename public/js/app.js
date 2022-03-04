@@ -1,4 +1,4 @@
-console.log('Working')
+
 
 
 const weatherForm = document.querySelector('form')
