@@ -12,6 +12,8 @@ const weatherCheck =require('./utils/weather')
 // console.log(path.join(__dirname, '../public/help.html'))
 
 const app = express()
+const port = process.env.PORT || 3000
+
 //Paths
 const pathOfPublicDirectory = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../template/views')
@@ -85,7 +87,7 @@ app.get('*', (req, res) => {
 
 })
 
-app.listen(3000, () => {
-    console.log('server is up')
+app.listen(port, () => {
+    console.log('server is up' + port)
 })
 
